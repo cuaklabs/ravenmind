@@ -1,0 +1,6 @@
+enablePrePostScripts: true
+
+packages:
+  - packages/*
+
+strictPeerDependencies: false

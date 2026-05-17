@@ -1,0 +1,22 @@
+{
+  "author": "Roberto Pintos López <roberto.pintos.lopez@gmail.com>",
+  "description": "General purpose memory for AI agents ",
+  "name": "root",
+  "keywords": [
+    "api",
+    "client",
+    "memory",
+    "llm",
+    "long-term-memory",
+    "ai"
+  ],
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@11.1.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuaklabs/ravenmind.git"
+  },
+  "scripts": {},
+  "type": "module"
+}
