@@ -1,6 +1,6 @@
-import { type VectorSearchQueryFilters } from './VectorSearchQueryFilters.js';
+import { type VectorFindQueryFilters } from './VectorFindQueryFilters.js';
 
 export interface VectorFindQuery {
-  filters: VectorSearchQueryFilters;
+  filters: VectorFindQueryFilters;
   limit?: number;
 }

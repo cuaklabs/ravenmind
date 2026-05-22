@@ -1,5 +1,6 @@
 import { type VectorFindQuery } from '../models/VectorFindQuery.js';
 import { type VectorInsertQuery } from '../models/VectorInsertQuery.js';
+import { type VectorKeywordSearchQuery } from '../models/VectorKeywordSearchQuery.js';
 import { type VectorPayload } from '../models/VectorPayload.js';
 import { type VectorResult } from '../models/VectorResult.js';
 import { type VectorSearchQuery } from '../models/VectorSearchQuery.js';
@@ -11,6 +12,7 @@ export interface VectorStore {
   getPayload(id: string): Promise<VectorPayload | null>;
   find(query: VectorFindQuery): Promise<VectorResult[]>;
   insert(queries: VectorInsertQuery[]): Promise<void>;
+  keywordSearch(query: VectorKeywordSearchQuery): Promise<VectorSearchResult[]>;
   search(query: VectorSearchQuery): Promise<VectorSearchResult[]>;
   update(queries: VectorUpdateQuery[]): Promise<void>;
 }

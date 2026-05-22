@@ -1,8 +1,8 @@
 import { type ModelMessage } from '../../llm/models/ModelMessage.js';
 
-export interface MessageInsertQuery {
+export type MessageInsertQuery = {
   createdAt: Date;
   message: ModelMessage;
   runId: string | undefined;
   userId: string | undefined;
-}
+}[];

@@ -1,7 +1,7 @@
 import { type VectorSearchQueryFilters } from './VectorSearchQueryFilters.js';
 
-export interface VectorSearchQuery {
+export interface VectorKeywordSearchQuery {
   filters: VectorSearchQueryFilters;
-  query: number[];
+  query: string;
   limit?: number;
 }

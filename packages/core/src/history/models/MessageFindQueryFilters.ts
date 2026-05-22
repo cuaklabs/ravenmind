@@ -1,4 +1,4 @@
 export interface MessageFindQueryFilters {
-  runId?: string;
-  userId?: string;
+  runId?: string | undefined;
+  userId?: string | undefined;
 }
