@@ -3,14 +3,9 @@
   "bugs": {
     "url": "https://github.com/cuaklabs/ravenmind/issues"
   },
-  "dependencies": {
-    "uuid": "^14.0.0",
-    "zod": "^4.4.3"
-  },
-  "description": "Ravenmind core package",
+  "description": "Ravenmind natural language adapter package",
   "devDependencies": {
-    "@standard-schema/spec": "1.1.0",
-    "@types/node": "24.12.4",
+    "@ravenmindjs/core": "workspace:*",
     "@vitest/coverage-v8": "4.1.6",
     "eslint": "10.3.0",
     "prettier": "3.8.3",
@@ -21,7 +16,7 @@
   "homepage": "https://github.com/cuaklabs/ravenmind",
   "keywords": [
     "ai",
-    "core",
+    "natural-language",
     "memory",
     "llm",
     "long-term-memory",
@@ -35,10 +30,12 @@
   "license": "Apache-2.0",
   "module": "lib/esm/index.js",
   "exports": {
-    ".": "./lib/esm/index.js",
-    "./vector": "./lib/esm/vector/index.js"
+    ".": "./lib/esm/index.js"
   },
-  "name": "@ravenmindjs/core",
+  "name": "@ravenmindjs/adapter-natural",
+  "peerDependencies": {
+    "natural": "^8.1.1"
+  },
   "publishConfig": {
     "access": "public"
   },

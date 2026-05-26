@@ -1,3 +1,3 @@
-# @ravenmind/core
+# @ravenmindjs/core
 
 Ravenmind core modules.
