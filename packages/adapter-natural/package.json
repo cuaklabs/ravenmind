@@ -30,7 +30,7 @@
   "license": "Apache-2.0",
   "module": "lib/esm/index.js",
   "exports": {
-    ".": "./lib/esm/index.js"
+    "./text": "./lib/esm/text/index.js"
   },
   "name": "@ravenmindjs/adapter-natural",
   "peerDependencies": {
